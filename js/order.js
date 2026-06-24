@@ -209,6 +209,8 @@ function calcEstimate() {
           <div class="cost-row"><span>${catNames[cat]} - ${colorNames[color]} - ${size.toUpperCase()}</span><span>₱${perUnit.toFixed(2)}/pc</span></div>
           <div class="cost-row"><span>Copies</span><span>${copies}</span></div>
           <div class="cost-row"><span>Subtotal</span><span>₱${total.toFixed(2)}</span></div>`;
+      } else {
+        breakdownHtml = `<div class="cost-row" style="color:#e8758a;"><span>Not available for this selection</span><span>—</span></div>`;
       }
     }
   } else if (cat === 'id') {
