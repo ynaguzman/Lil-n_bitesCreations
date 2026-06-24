@@ -20,9 +20,9 @@ const PRICES = {
     colored: { a4: 6, short: 7, long: 8 }
   },
   'photo-only': {
-    bw: { a4: 8, short: 7, long: 9 },
-    partial: { a4: 9, short: 8, long: 10 },
-    colored: {}
+    bw: { a4: 6, short: 5, long: 7 },
+    partial: { a4: 7, short: 6, long: 8 },
+    colored: { a4: 9, short: 8, long: 10 }
   },
   id: {
     'id-a': { price: 50, desc: 'Package A - 4pcs 2x2 & 8pcs 1x1' },
@@ -209,8 +209,6 @@ function calcEstimate() {
           <div class="cost-row"><span>${catNames[cat]} - ${colorNames[color]} - ${size.toUpperCase()}</span><span>₱${perUnit.toFixed(2)}/pc</span></div>
           <div class="cost-row"><span>Copies</span><span>${copies}</span></div>
           <div class="cost-row"><span>Subtotal</span><span>₱${total.toFixed(2)}</span></div>`;
-      } else {
-        breakdownHtml = `<div class="cost-row" style="color:#e8758a;"><span>Not available for this selection</span><span>—</span></div>`;
       }
     }
   } else if (cat === 'id') {
