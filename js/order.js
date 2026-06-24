@@ -361,7 +361,7 @@ async function submitOrder(e) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         service_id: 'service_rlgiatm',
-        template_id: 'template_uauzulw',
+        template_id: 'template_9fozov5',
         user_id: 'ygyA-0gFFOkhnUzi8',
         template_params: {
           name,
