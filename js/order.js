@@ -409,22 +409,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 });
-
-  return false;
-}
-
-function closeReceipt() {
-  document.getElementById('receiptOverlay').classList.remove('show');
-}
-
-// Listen for Enter key not submitting the form prematurely
-document.addEventListener('DOMContentLoaded', function () {
-  const inputs = document.querySelectorAll('.form-control');
-  for (const inp of inputs) {
-    if (inp.type !== 'textarea') {
-      inp.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter') e.preventDefault();
-      });
-    }
-  }
-});
